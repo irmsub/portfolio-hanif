@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hanif Cahyo Romadhon</title>
+    <style>
+        /* Base Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        /* A4 Paper Styling */
+        .page {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm 20mm;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Typography */
+        h1 { font-size: 28px; text-transform: uppercase; letter-spacing: 2px; color: #111; margin-bottom: 5px; }
+        h2 { font-size: 16px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 20px; font-weight: 500; }
+        
+        h3.section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #111;
+            border-bottom: 2px solid #111;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        h4.job-title { font-size: 16px; font-weight: 700; color: #000; }
+        .job-meta { font-size: 14px; color: #666; font-style: italic; margin-bottom: 8px; }
+        
+        p { font-size: 14px; margin-bottom: 8px; color: #444; text-align: justify; }
+        ul { margin-left: 20px; font-size: 14px; color: #444; }
+        li { margin-bottom: 4px; }
+
+        /* Header Layout */
+        .header { text-align: center; margin-bottom: 30px; }
+        .contact-info { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            font-size: 13px; 
+            color: #555;
+            margin-top: 10px;
+        }
+        .contact-item { display: flex; items-center: center; gap: 5px; }
+
+        /* Skills Grid */
+        .skills-container { display: grid; grid-cols: 2; gap: 20px; }
+        .skill-category { margin-bottom: 10px; }
+        .skill-name { font-weight: 700; font-size: 14px; display: block; margin-bottom: 2px; }
+        .skill-list { font-size: 13px; color: #555; }
+
+        /* Helper for Print */
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #000;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { box-shadow: none; width: 100%; height: auto; padding: 0; margin: 0; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tombol Print -->
+    <a onclick="window.print()" class="print-btn">🖨️ Save as PDF</a>
+
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <h1>Hanif Cahyo Romadhon</h1>
+            <h2>Freelance Photo Editor & Creative Designer</h2>
+            <div class="contact-info">
+                <span class="contact-item">Jakarta, Indonesia</span> | 
+                <span class="contact-item">cahyo.hanif@gmail.com</span> | 
+                <span class="contact-item">Portfolio: Attached</span>
+            </div>
+        </header>
+
+        <!-- Profile Summary -->
+        <section>
+            <h3 class="section-title">Professional Summary</h3>
+            <p>
+                Creative professional with <strong>experience since 2020</strong> in photo editing, graphic design, and digital imaging. Proficient in Adobe Creative Suite (Photoshop, Lightroom) with a strong technical background in instrumentation technology. Experienced in managing offline creative projects including merchandise design and editorial layout. Specialized in following strict visual guidelines and writing precise editing instructions suitable for <strong>AI training datasets</strong>.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <span class="skill-name">Software & Tools</span>
+                    <span class="skill-list">Adobe Photoshop (Expert), Lightroom, Illustrator, Canva, Generative AI Tools.</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">Photo Editing</span>
+                    <span class="skill-list">Object Removal/Inpainting, Frequency Separation, Advanced Masking, Color Grading, Restoration.</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">Creative Design</span>
+                    <span class="skill-list">Editorial Layout (Books/Magazines), Apparel/Merchandise Design, Visual Identity.</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-name">AI & Data</span>
+                    <span class="skill-list">Image Annotation, Writing Imperative Instructions (English), Quality Assurance.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h3 class="section-title">Work Experience</h3>
+            
+            <div style="margin-bottom: 20px;">
+                <h4 class="job-title">Freelance Photo Editor & Designer</h4>
+                <div class="job-meta">Remote & Offline Projects | <strong>2020 – Present</strong></div>
+                <ul>
+                    <li><strong>Photo Editing:</strong> Executed complex editing tasks including object removal, background manipulation, and color grading for diverse clients.</li>
+                    <li><strong>Creative Projects:</strong> Collaborated on offline projects designing layouts for books, magazines, and apparel merchandise (clothing), ensuring print-ready quality.</li>
+                    <li><strong>AI Data Preparation:</strong> Produced high-quality "Before and After" visual comparisons and wrote clear, step-by-step English instructions describing visual changes for AI model training.</li>
+                    <li><strong>Quality Control:</strong> Maintained high standards of visual consistency and texture continuity across all digital and print deliverables.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h3 class="section-title">Education</h3>
+            <div>
+                <h4 class="job-title">State College of Meteorology Climatology And Geophysics (STMKG)</h4>
+                <div class="job-meta">Bachelor of Applied Science (BASc) - Instrumentation Technology</div>
+                <p style="font-size: 13px; color: #666; margin-top: 5px;">
+                    *Strong technical foundation applied to precision editing and software workflows.
+                </p>
+            </div>
+        </section>
+
+        <!-- Instructions Sample (Bonus Section) -->
+        <section>
+            <h3 class="section-title">Sample Editing Instruction (AI Training)</h3>
+            <div style="background: #f9f9f9; padding: 15px; border-left: 3px solid #333; font-size: 13px; font-style: italic; color: #555;">
+                "Remove the yellow trash bin in the bottom left corner using the healing tool. Straighten the horizon line by 2 degrees. Increase the exposure on the building shadows specifically to reveal architectural details, while keeping the sky highlights protected."
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

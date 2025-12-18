@@ -122,12 +122,15 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Color Correction Sample",
+      title: "Golden Hour Grading", // Judul boleh diganti sesuka hati
       category: "color",
-      description: "Standard color correction workflow example (Example Data).",
-      beforeImg: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1000&auto=format&fit=crop",
-      afterImg: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=1000&auto=format&fit=crop",
-      tags: ["Color Correction", "Lightroom"]
+      description: "Enhancing a dull raw photo into a warm, vibrant sunset scene. Focused on lifting shadows and shifting white balance.",
+      
+      // GANTI BAGIAN INI:
+      beforeImg: "/color-before.jpg", 
+      afterImg: "/color-after.jpg", 
+      
+      tags: ["Color Correction", "Lightroom", "Mood"]
     }
   ];
 
